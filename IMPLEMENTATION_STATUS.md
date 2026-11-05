@@ -1,0 +1,1 @@
+This source was prepared from the supplied SiteLedger specification. The bundled Dart/Flutter code is a first-pass implementation and has not yet been compiled or analyzed with Flutter SDK. The release build and test suite still need to be run on a Flutter-enabled machine.

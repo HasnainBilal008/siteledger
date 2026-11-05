@@ -1,27 +1,20 @@
 # SiteLedger
 
-Offline-first construction site management for Android, built with Flutter and SQLite.
+Offline-first Flutter Android construction management app.
 
-## Features
-- Role-based access: Admin, Accountant, Manager
-- Site and worker management
-- Attendance and wage calculations
-- Purchases, income, expenses, and profit/loss
-- Local SQLite storage; no cloud dependency for core app data
+See SiteLedger_Spec.md for the full build spec and design/ for the 8 user references.
 
-## Getting started
-1. Install Flutter stable and Android Studio / Android SDK.
-2. Run `flutter pub get`.
-3. Run `flutter analyze`.
-4. Run `flutter test`.
-5. Run `flutter run` on an Android device or emulator.
+Requirements: Flutter stable, Dart 3, Android SDK.
 
-## Demo accounts
-- Admin: `admin` / `admin123`
-- Accountant: `accountant` / `acc123`
-- Manager: `manager` / `manager123`
+Run:
+``hbash
+flutter create --org com.siteledger --project-name siteledger --platforms android .
+flutter pub get
+flutter run
+```
 
-> Demo credentials are for local development only. Replace them with secure account management before production release.
+Demo logins: admin/admin123, accountant/acc123, manager/manager123.
 
-## Architecture
-Flutter UI + SQLite local persistence. The app is designed to keep working offline. Supabase is intentionally not used for core records because the product specification requires offline-only behavior.
+All records are stored locally using SQLite. No cloud sync is included by design.
+
+BUILD VERIFICATION: The authoring environment did not have Flutter/Dart, so the source has not been analyzed, tested, or built into an APK yet. See IMPLEMENTATION_STATUS.md.

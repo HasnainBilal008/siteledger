@@ -1,1 +1,11 @@
-.dart_tool/\nbuild/\n.flutter-plugins\n.flutter-plugins-dependencies\n.packages\n.pub-cache/\n.idea/\n.vscode/\n*.iml\n
+/.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.idea/
+.vscode/
+*.iml
+build/
+android/local.properties
