@@ -1,0 +1,1 @@
+import 'package:flutter_test/flutter_test.dart';\nimport 'package:siteledger/main.dart';\n\nvoid main() {\n  testWidgets('login screen renders', (tester) async {\n    await tester.pumpWidget(const SiteLedgerApp());\n    expect(find.text('SiteLedger'), findsOneWidget);\n    expect(find.text('Sign in'), findsOneWidget);\n  });\n}\n
