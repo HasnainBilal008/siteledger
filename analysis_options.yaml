@@ -1,0 +1,1 @@
+include: package:flutter_lints/flutter.yaml\n\nlinter:\n  rules:\n    avoid_print: true\n    prefer_const_constructors: true\n
