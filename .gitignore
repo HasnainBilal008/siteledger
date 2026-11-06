@@ -1,11 +1,23 @@
-/.dart_tool/
+# Dart / Flutter
+.dart_tool/
 .packages
 .pub-cache/
 .flutter-plugins
 .flutter-plugins-dependencies
-.metadata
+build/
+
+# IDE
 .idea/
 .vscode/
 *.iml
-build/
+
+# Android local configuration and signing secrets
 android/local.properties
+android/key.properties
+android/.gradle/
+*.jks
+*.keystore
+
+# OS files
+.DS_Store
+Thumbs.db
